@@ -1,0 +1,1 @@
+c:\users\jason\onedrive\documents\visual studio 2015\Projects\SenseHatRPi\SenseHatRPi\SenseHatRPi.csproj;arm
