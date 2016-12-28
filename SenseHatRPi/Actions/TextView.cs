@@ -31,10 +31,24 @@ namespace SenseHatRPi.Actions
 
         private bool displaystate;
 
+       
         public override void Run()
         {
-            // Get a copy of the rainbow colors.
-            SenseHat.Display.Reset();
+            // Blink red for 3 times.
+            for (int i = 1; i <= 3; i++)
+            {
+                SenseHat.Display.Clear();
+                SenseHat.Display.Fill(Colors.Red);
+                SenseHat.Display.Update();
+                Sleep(TimeSpan.FromMilliseconds(100));
+                SenseHat.Display.Fill(Colors.Black);
+                SenseHat.Display.Update();
+            }
+           
+
+
+                // Get a copy of the rainbow colors.
+                SenseHat.Display.Reset();
             SenseHat.Display.CopyScreenToColors(_rainbowColors);
 
             // Recreate the font from the serialized bytes.
@@ -53,14 +67,7 @@ namespace SenseHatRPi.Actions
                 characters);
 
             displaystate = true;
-            /*for (int i = 1; i <= 3; i++)
-            {
-                SenseHat.Display.Fill(Colors.Red);
-                SenseHat.Display.Update();
-                Sleep(TimeSpan.FromMilliseconds(70));
-                SenseHat.Display.Fill(Colors.Black);
-                SenseHat.Display.Update();
-            }*/
+            
 
             while (displaystate == true)
             {

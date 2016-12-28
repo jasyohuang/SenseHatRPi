@@ -38,7 +38,7 @@ namespace SenseHatRPi.Actions
                     }
 
                     display.Clear();
-                    tinyFont.Write(display, text, Colors.Green);
+                    tinyFont.Write(display, text, Colors.IndianRed);
                     display.Update();
 
                     SetScreenText?.Invoke($"{pressure:0:1}");

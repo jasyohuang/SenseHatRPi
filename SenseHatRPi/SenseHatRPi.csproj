@@ -98,8 +98,10 @@
     <Compile Include="ActionSelectors\PressureSelector.cs" />
     <Compile Include="ActionSelectors\TemperatureSelector.cs" />
     <Compile Include="ActionSelectors\TextViewSelector.cs" />
+    <Compile Include="ActionSelectors\WeatherSelector.cs" />
     <Compile Include="Actions\Home.cs" />
     <Compile Include="Actions\TextView.cs" />
+    <Compile Include="Actions\WeatherPrediction.cs" />
     <Compile Include="Actions\WriteHumidity.cs" />
     <Compile Include="Actions\WritePressure.cs" />
     <Compile Include="Actions\WriteTemperature.cs" />

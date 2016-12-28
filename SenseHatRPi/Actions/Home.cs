@@ -62,6 +62,11 @@ namespace SenseHatRPi.Actions
                         ActionRunner.Run(senseHat => TextViewSelector.GetAction(senseHat, SetScreenText));
                         selectingstate = false;
                     }
+                    else if (SenseHat.Joystick.UpKey == KeyState.Pressed)
+                    {
+                        ActionRunner.Run(senseHat => WeatherSelector.GetAction(senseHat, SetScreenText));
+                        selectingstate = false;
+                    }
                 }
             }
 
