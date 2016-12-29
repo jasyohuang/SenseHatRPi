@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\jason\OneDrive\Documents\Visual Studio 2015\Projects\SenseHatRPi\SenseHatRPi\bin\ARM\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-29T08:34:33.237</Modified>
+      <Modified>2016-12-29T08:41:40.268</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\jason\OneDrive\Documents\Visual Studio 2015\Projects\SenseHatRPi\SenseHatRPi\bin\ARM\Debug\SenseHatRPi.exe">
       <PackagePath>entrypoint\SenseHatRPi.exe</PackagePath>
-      <Modified>2016-12-29T08:34:32.214</Modified>
+      <Modified>2016-12-29T08:41:33.559</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Emmellsoft.IoT.RPi.SenseHat\0.1.0.10\lib\.NETCore50\Emmellsoft.IoT.Rpi.SenseHat.dll">
       <PackagePath>Emmellsoft.IoT.Rpi.SenseHat.dll</PackagePath>
@@ -553,11 +553,11 @@
     <AppxPackagedFile Include="C:\Users\jason\OneDrive\Documents\Visual Studio 2015\Projects\SenseHatRPi\SenseHatRPi\bin\ARM\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-29T07:04:29.770</Modified>
+      <Modified>2016-12-29T08:41:35.443</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jason\OneDrive\Documents\Visual Studio 2015\Projects\SenseHatRPi\SenseHatRPi\bin\ARM\Debug\Core\SenseHatRPi.exe">
       <PackagePath>SenseHatRPi.exe</PackagePath>
-      <Modified>2016-12-29T08:34:33.219</Modified>
+      <Modified>2016-12-29T08:41:40.257</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

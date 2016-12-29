@@ -17,8 +17,6 @@ namespace SenseHatRPi.Actions
 
         
         static ISenseHat senseHat;
-        ISenseHatDisplay senseHatDisplay;
-
         static DeviceClient deviceClient;
         static string iotHubUri = "start.azure-devices.net";
         static string deviceKey = "COjphwqpr6xpuLKoc/JOrty0338x3Cy14jN2ruStTgs=";
