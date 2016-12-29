@@ -34,39 +34,7 @@ namespace SenseHatRPi
                     });
 
             }
-            private async void MainPage_Loaded(object sender, RoutedEventArgs e)
-            {
-                //get a reference to SenseHat
-                senseHat = await SenseHatFactory.GetSenseHat();
-                //initialize the timer
-                DispatcherTimer timer = new DispatcherTimer();
-                timer.Tick += Timer_Tick;
-                timer.Interval = TimeSpan.FromSeconds(1);
-                timer.Start();
             }
-
-            private async void Timer_Tick(object sender, object e)
-            {
-                senseHat.Sensors.HumiditySensor.Update();
-                senseHat.Sensors.PressureSensor.Update();
-
-                //gather data
-                SenseHatDatas data = new SenseHatDatas();
-                data.TemperatureData = senseHat.Sensors.Temperature;
-                data.HumidityData = senseHat.Sensors.Humidity;
-                data.PressureData = senseHat.Sensors.Pressure;
-
-                //send them to the cloud
-                //await AzureIoTHub.SendSenseHatDataToCloudAsync("test");
-
-
-
-                /*notify UI
-                TempText.Text = data.Temperature.ToString();
-                TempHumidity.Text = data.Humidity.ToString();
-                TempPressure.Text = data.Pressure.ToString();*/
-            }
-
-            ISenseHat senseHat;
+    
         }
-    }
+    

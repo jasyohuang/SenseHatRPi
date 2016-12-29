@@ -10,19 +10,19 @@
     <PackageArchitecture>arm</PackageArchitecture>
     <PackageIdentityName>8dd50649-268b-475f-9208-d6215edbb6a9</PackageIdentityName>
     <PackageIdentityPublisher>CN=jason</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\jason\onedrive\documents\visual studio 2015\Projects\SenseHatRPi\SenseHatRPi\obj\ARM\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\jason\OneDrive\Documents\Visual Studio 2015\Projects\SenseHatRPi\SenseHatRPi\obj\ARM\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\jason\onedrive\documents\visual studio 2015\Projects\SenseHatRPi\SenseHatRPi\bin\ARM\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\jason\OneDrive\Documents\Visual Studio 2015\Projects\SenseHatRPi\SenseHatRPi\bin\ARM\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\jason\onedrive\documents\visual studio 2015\Projects\SenseHatRPi\SenseHatRPi\bin\ARM\Debug\SenseHatRPi.exe">
+    <AppxPackagedFile Include="C:\Users\jason\OneDrive\Documents\Visual Studio 2015\Projects\SenseHatRPi\SenseHatRPi\bin\ARM\Debug\SenseHatRPi.exe">
       <PackagePath>entrypoint\SenseHatRPi.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Emmellsoft.IoT.RPi.SenseHat\0.1.0.10\lib\.NETCore50\Emmellsoft.IoT.Rpi.SenseHat.dll">
@@ -31,8 +31,20 @@
     <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Emmellsoft.IoT.RPi.SenseHat\0.1.0.10\lib\.NETCore50\RTIMULibCS.dll">
       <PackagePath>RTIMULibCS.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Microsoft.AspNet.WebApi.Client\5.2.3\lib\portable-wp8+netcore45+net45+wp81+wpa81\System.Net.Http.Formatting.dll">
+      <PackagePath>System.Net.Http.Formatting.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Microsoft.Azure.Amqp\1.1.5\lib\uap10.0\Microsoft.Azure.Amqp.Uwp.dll">
+      <PackagePath>Microsoft.Azure.Amqp.Uwp.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Microsoft.Net.Http\2.2.22\lib\win8\System.Net.Http.Extensions.dll">
+      <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Microsoft.Net.Http\2.2.22\lib\win8\System.Net.Http.Primitives.dll">
+      <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.ComponentModel.DataAnnotations.dll">
       <PackagePath>System.ComponentModel.DataAnnotations.dll</PackagePath>
@@ -75,6 +87,24 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Microsoft.Win32.Primitives\4.0.0\lib\dotnet\Microsoft.Win32.Primitives.dll">
       <PackagePath>Microsoft.Win32.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Newtonsoft.Json\9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\PCLCrypto\2.0.147\lib\portable-win81+wpa81\PCLCrypto.dll">
+      <PackagePath>PCLCrypto.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\PInvoke.BCrypt\0.3.90\lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\PInvoke.BCrypt.dll">
+      <PackagePath>PInvoke.BCrypt.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\PInvoke.Kernel32\0.3.90\lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\PInvoke.Kernel32.dll">
+      <PackagePath>PInvoke.Kernel32.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\PInvoke.NCrypt\0.3.90\lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\PInvoke.NCrypt.dll">
+      <PackagePath>PInvoke.NCrypt.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\PInvoke.Windows.Core\0.3.90\lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\PInvoke.Windows.Core.dll">
+      <PackagePath>PInvoke.Windows.Core.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\runtime.any.System.Private.DataContractSerialization\4.1.0\lib\netcore50\System.Private.DataContractSerialization.dll">
       <PackagePath>System.Private.DataContractSerialization.dll</PackagePath>
@@ -340,47 +370,53 @@
     <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jason\onedrive\documents\visual studio 2015\Projects\SenseHatRPi\SenseHatRPi\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Validation\2.3.5\lib\portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\Validation.dll">
+      <PackagePath>Validation.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Microsoft.Azure.Devices.Client\1.0.16\lib\uap10.0\Microsoft.Azure.Devices.Client.winmd">
+      <PackagePath>Microsoft.Azure.Devices.Client.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\OneDrive\Documents\Visual Studio 2015\Projects\SenseHatRPi\SenseHatRPi\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jason\onedrive\documents\visual studio 2015\Projects\SenseHatRPi\SenseHatRPi\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\jason\OneDrive\Documents\Visual Studio 2015\Projects\SenseHatRPi\SenseHatRPi\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jason\onedrive\documents\visual studio 2015\Projects\SenseHatRPi\SenseHatRPi\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\jason\OneDrive\Documents\Visual Studio 2015\Projects\SenseHatRPi\SenseHatRPi\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jason\onedrive\documents\visual studio 2015\Projects\SenseHatRPi\SenseHatRPi\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\jason\OneDrive\Documents\Visual Studio 2015\Projects\SenseHatRPi\SenseHatRPi\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jason\onedrive\documents\visual studio 2015\Projects\SenseHatRPi\SenseHatRPi\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\jason\OneDrive\Documents\Visual Studio 2015\Projects\SenseHatRPi\SenseHatRPi\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jason\onedrive\documents\visual studio 2015\Projects\SenseHatRPi\SenseHatRPi\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\jason\OneDrive\Documents\Visual Studio 2015\Projects\SenseHatRPi\SenseHatRPi\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jason\onedrive\documents\visual studio 2015\Projects\SenseHatRPi\SenseHatRPi\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\jason\OneDrive\Documents\Visual Studio 2015\Projects\SenseHatRPi\SenseHatRPi\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jason\onedrive\documents\visual studio 2015\Projects\SenseHatRPi\SenseHatRPi\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\jason\OneDrive\Documents\Visual Studio 2015\Projects\SenseHatRPi\SenseHatRPi\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jason\onedrive\documents\visual studio 2015\Projects\SenseHatRPi\SenseHatRPi\bin\ARM\Debug\SenseHatRPi.xr.xml">
+    <AppxPackagedFile Include="C:\Users\jason\OneDrive\Documents\Visual Studio 2015\Projects\SenseHatRPi\SenseHatRPi\bin\ARM\Debug\SenseHatRPi.xr.xml">
       <PackagePath>SenseHatRPi.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jason\onedrive\documents\visual studio 2015\Projects\SenseHatRPi\SenseHatRPi\bin\ARM\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\jason\OneDrive\Documents\Visual Studio 2015\Projects\SenseHatRPi\SenseHatRPi\bin\ARM\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jason\onedrive\documents\visual studio 2015\Projects\SenseHatRPi\SenseHatRPi\bin\ARM\Debug\Core\SenseHatRPi.exe">
+    <AppxPackagedFile Include="C:\Users\jason\OneDrive\Documents\Visual Studio 2015\Projects\SenseHatRPi\SenseHatRPi\bin\ARM\Debug\Core\SenseHatRPi.exe">
       <PackagePath>SenseHatRPi.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

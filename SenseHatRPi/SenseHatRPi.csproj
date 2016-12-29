@@ -90,9 +90,11 @@
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
     <None Include="project.json" />
+    <None Include="Service References\start\ConnectedService.json" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActionRunner.cs" />
+    <Compile Include="ActionSelectors\AzureSelector.cs" />
     <Compile Include="ActionSelectors\HomeSelector.cs" />
     <Compile Include="ActionSelectors\HumiditySelector.cs" />
     <Compile Include="ActionSelectors\PressureSelector.cs" />
@@ -100,6 +102,7 @@
     <Compile Include="ActionSelectors\TextViewSelector.cs" />
     <Compile Include="ActionSelectors\WeatherSelector.cs" />
     <Compile Include="Actions\Home.cs" />
+    <Compile Include="Actions\SendToAzure.cs" />
     <Compile Include="Actions\TextView.cs" />
     <Compile Include="Actions\WeatherPrediction.cs" />
     <Compile Include="Actions\WriteHumidity.cs" />
@@ -108,6 +111,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AzureIoTHub.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -140,6 +144,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

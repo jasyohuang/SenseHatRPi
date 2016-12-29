@@ -52,7 +52,7 @@ namespace SenseHatRPi
             //humidity
             if (humidityValue < 40)
             {
-                humiditycon = "Your room is to dry.. turn on the humidifier pls :')";
+                humiditycon = "Your room is too dry.. turn on the humidifier pls :')";
             }
             else if (humidityValue > 60)
             {

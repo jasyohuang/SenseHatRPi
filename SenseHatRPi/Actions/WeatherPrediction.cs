@@ -29,15 +29,44 @@ namespace SenseHatRPi.Actions
             else if ((humidity < 40) & (temperature > 35)){
                 drawsun();
             }
-            else
+            /*else
             {
                 drawcloud();
-            }
+            }*/
 
             Sleep(TimeSpan.FromSeconds(2));
             ActionRunner.Run(senseHat => HomeSelector.GetAction(senseHat, SetScreenText));
 
 
+        }
+        private void drawcloud()
+        {
+            SenseHat.Display.Clear();
+            for (int y = 1; y < 7; y++)
+            {
+                SenseHat.Display.Screen[5, y] = Colors.DarkBlue;
+            }
+            for (int x = 4; x < 7; x++)
+            {
+                SenseHat.Display.Screen[x, 2] = Colors.DarkBlue;
+            }
+            for (int x = 2; x < 8; x++)
+            {
+                SenseHat.Display.Screen[x, 3] = Colors.DarkBlue;
+            }
+            for (int x = 1; x < 9; x++)
+            {
+                SenseHat.Display.Screen[x, 4] = Colors.DarkBlue;
+            }
+            for (int x = 2; x < 9; x++)
+            {
+                SenseHat.Display.Screen[x, 5] = Colors.DarkBlue;
+            }
+            for (int x = 5; x < 7; x++)
+            {
+                SenseHat.Display.Screen[x, 6] = Colors.DarkBlue;
+            }
+            SenseHat.Display.Update();
         }
         private void drawsun()
         {
@@ -85,32 +114,7 @@ namespace SenseHatRPi.Actions
             }
             SenseHat.Display.Update();
         }
-        private void drawcloud()
-        {
-            SenseHat.Display.Clear();
-            SenseHat.Display.Screen[5, 8] = Colors.Blue;
-            for (int x = 4; x<7; x++)
-            {
-                SenseHat.Display.Screen[x, 7] = Colors.Blue;
-            }
-            for (int x = 2; x < 8; x++)
-            {
-                SenseHat.Display.Screen[x, 6] = Colors.Blue;
-            }
-            for (int x = 1; x < 9; x++)
-            {
-                SenseHat.Display.Screen[x, 5] = Colors.Blue;
-            }
-            for (int x = 2; x < 8; x++)
-            {
-                SenseHat.Display.Screen[x, 4] = Colors.Blue;
-            }
-            for (int x = 5; x < 7; x++)
-            {
-                SenseHat.Display.Screen[x, 3] = Colors.Blue;
-            }
-            SenseHat.Display.Update();
-        }
+       
     }
 }
 

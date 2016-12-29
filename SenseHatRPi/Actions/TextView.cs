@@ -40,9 +40,9 @@ namespace SenseHatRPi.Actions
                 SenseHat.Display.Clear();
                 SenseHat.Display.Fill(Colors.Red);
                 SenseHat.Display.Update();
-                Sleep(TimeSpan.FromMilliseconds(100));
                 SenseHat.Display.Fill(Colors.Black);
                 SenseHat.Display.Update();
+                Sleep(TimeSpan.FromMilliseconds(500));
             }
            
 
