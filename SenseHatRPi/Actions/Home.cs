@@ -40,12 +40,12 @@ namespace SenseHatRPi.Actions
             while (selectingstate == true)
             {
 
-                //if (counter == 7500)
-               // {
-                 //   ActionRunner.Run(senseHat => AzureSelector.GetAction(senseHat, SetScreenText));
-                 //   selectingstate = false;
-                 //   counter = 0;
-               // }
+                if (counter == 5000)
+                {
+                    ActionRunner.Run(senseHat => AzureSelector.GetAction(senseHat, SetScreenText));
+                    selectingstate = false;
+                    counter = 0;
+                }
 
                 if (SenseHat.Joystick.Update())
                 {

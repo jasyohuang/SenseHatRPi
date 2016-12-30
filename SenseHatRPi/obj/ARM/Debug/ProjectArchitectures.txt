@@ -1,1 +1,1 @@
-C:\Users\jason\OneDrive\Documents\Visual Studio 2015\Projects\SenseHatRPi\SenseHatRPi\SenseHatRPi.csproj;arm
+C:\Users\jason\onedrive\documents\visual studio 2015\Projects\SenseHatRPi\SenseHatRPi\SenseHatRPi.csproj;arm

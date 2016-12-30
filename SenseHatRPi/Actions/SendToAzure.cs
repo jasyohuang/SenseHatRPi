@@ -15,52 +15,31 @@ namespace SenseHatRPi.Actions
         public SendToAzure(ISenseHat senseHat, Action<string> setScreenText)
             : base(senseHat, setScreenText) { }
 
-        
-        static ISenseHat senseHat;
-        static DeviceClient deviceClient;
-        static string iotHubUri = "start.azure-devices.net";
-        static string deviceKey = "COjphwqpr6xpuLKoc/JOrty0338x3Cy14jN2ruStTgs=";
+
 
         public override void Run()
         {
+
             // notify with blue screen
             SenseHat.Display.Clear();
             SenseHat.Display.Fill(Colors.DeepSkyBlue);
             SenseHat.Display.Update();
-
-            /*//gather data
+            //update the sensor
+            SenseHat.Sensors.HumiditySensor.Update();
+            SenseHat.Sensors.PressureSensor.Update();
+            // get the data to send
             SenseHatDatas data = new SenseHatDatas();
-            data.TemperatureData = senseHat.Sensors.Temperature;
-            data.HumidityData = senseHat.Sensors.Humidity;
-            data.PressureData = senseHat.Sensors.Pressure;
-
-            GoToAzure(data);*/
-
-            deviceClient = DeviceClient.Create(iotHubUri, new DeviceAuthenticationWithRegistrySymmetricKey("myFirstDevice", deviceKey), TransportType.Amqp);
-
-            SendDeviceToCloudMessages();
-
+            data.TemperatureData = SenseHat.Sensors.Temperature;
+            data.HumidityData = SenseHat.Sensors.Humidity;
+            data.PressureData = SenseHat.Sensors.Pressure;
+            // send to cloud     
+            AzureIoTHub.SendDeviceToCloudMessageAsync(data);
+           
+           
 
             ActionRunner.Run(senseHat => HomeSelector.GetAction(senseHat, SetScreenText));
-         }
-        private static async void SendDeviceToCloudMessages()
-        {
-            double temperature = (senseHat.Sensors.Temperature.Value);
-            double humidity = (senseHat.Sensors.Humidity.Value);
-            double pressure = (senseHat.Sensors.Pressure.Value);
-
-            var telemetryDataPoint = new
-                {
-                    deviceId = "myFirstDevice",
-                    temperature, humidity, pressure
-                };
-                var messageString = JsonConvert.SerializeObject(telemetryDataPoint);
-                var message = new Message(Encoding.ASCII.GetBytes(messageString));
-
-                await deviceClient.SendEventAsync(message);
-               
-            
         }
+
     }
     }
 
