@@ -11,6 +11,7 @@ namespace SenseHatRPi
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
+    /// Mengapakah harus terjadi, semua yang tak ku harapkan ini?
     /// </summary>
 
         public sealed partial class MainPage : Page
@@ -28,8 +29,7 @@ namespace SenseHatRPi
             private async void SetScreenText(string text)
             {
                 await CoreApplication.MainView.CoreWindow.Dispatcher.RunAsync(
-                    CoreDispatcherPriority.Normal, () =>
-                    {
+                    CoreDispatcherPriority.Normal, () => {
                         ScreenText.Text = text;
                     });
 
